@@ -3,7 +3,6 @@ $(document).ready(function(){
         var target = $(this.getAttribute('href'));
         
         if(target.length) {
-            console.log("oi")
             event.preventDefault();
             $('html, body').stop().animate({
                 scrollTop: target.offset().top
