@@ -1,5 +1,14 @@
+.start-here-main-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 .start-here-container {
     padding: 80px 40px 40px 40px;
+}
+
+.buttons-options a {
+    margin-right: 20px;
 }
 
 .top-candidate-images-container {
@@ -19,10 +28,20 @@
     flex-direction: row;
 }
 
-.btn-start-here {
+.btn-start-here, .btn-view-demo {
     border-radius: 30px;
     font-size: 16pt;
     padding: 10px 20px;
+}
+
+.btn-view-demo {
+    background-color: red !important;
+    border-color: red;
+}
+
+.btn-view-demo:hover {
+    background-color: rgb(236, 0, 0) !important;
+    border-color: rgb(236, 0, 0);
 }
 
 .our-experience-container {
@@ -75,6 +94,7 @@
     flex-direction: row;
     justify-content: space-between;
     margin-top: 50px;
+    padding: 0px 40px;
 }
 
 .service-container .service-item {
@@ -82,14 +102,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.service-container .service-item {
-    width: 350px;
+    max-width: 300px;
     height: 600px;
     border-radius: 200px;
     background-color: var(--main-color);
-    padding: 50px;
+    padding: 30px 50px;
 }
 
 .service-container .service-item .service-item-image {
@@ -98,8 +115,10 @@
     padding: 70px;
 }
 .service-container .service-item .service-item-image img {
-    width: 100%;
-    height: auto;
+    width: 110px;
+    height: 110px;
+    /* width: 100%;
+    height: auto; */
 }
 
 .service-container .service-item h2 {
